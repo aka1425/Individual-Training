@@ -1,0 +1,193 @@
+<!-- Fundamental Front-End Web Development I -->
+
+<!-- STRUKTUR DASAR HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingStudio</title>
+  </head>
+
+  <body>
+    <!-- HEADING & PARAGRAPH -->
+    <!-- key word-nya "p*2"  -->
+    <p>Hai</p>
+    <p>Aka</p> 
+
+    <h1 class="text-merah" id="baris1">Ini contoh Merah</h1>
+    <h1 class="text-biru" id="baris2">Ini contoh Biru</h1>
+    <h1>Ini contoh</h1>
+
+    <!-- <br> adalah salah satu contoh tag yg tdk memerlukan akhiran tag (</tag>). Biasa di sebut void text -->
+    <!-- tanpa br (break row) -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed
+      cumque ipsum aspernatur recusandae repellat corrupti placeat sint
+      nesciunt. Suscipit corrupti consectetur soluta non commodi iste incidunt
+      labore voluptatem laudantium?
+    </p>
+
+    <!-- dengan br -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+      Optio eligendi doloremque veniam quos iure rem mollitia animi labore,
+      natus illum eius assumenda cupiditate sint praesentium! Nesciunt,
+      reiciendis exercitationem! Unde, dicta?
+    </p>
+    <!-- row=baris///one row=satu baris-->
+
+    <!-- HTML LIST -->
+    <!-- ol(ordered list) -->
+    <ol>
+      <li>Potong</li>
+      <li>Masak</li>
+      <li>Hidangkan</li>
+    </ol>
+
+    <!-- ul(unordered list) -->
+    <ul>
+      <li>HALO</li>
+      <li>Masak</li>
+      <li>Hidangkan</li>
+    </ul>
+    <!-- li(list) -->
+    <!-- bisa juga diganti dengan romawi III, abc/ABC. Lebih lengkap cari di "MDN Web Attribute" bagian <ol> -->
+    <ol type="I">
+      <li>Potong</li>
+      <li>Masak</li>
+      <li>Hidangkan</li>
+    </ol>
+    <ol type="A">
+      <li>Potong</li>
+      <li>Masak</li>
+      <li>Hidangkan</li>
+    </ol>
+    <!-- sama dgn <ol>, <ul> bisa juga diganti. Lebih lengkap cari di "MDN Web Attribute" bagian <ol> -->
+    <ul type="circle">
+      <li>Potong</li>
+      <li>Masak</li>
+      <li>Hidangkan</li>
+    </ul>
+
+    <!-- IMAGE & HYPERLINK -->
+    <img src="./CodingStudio/car bg.jpeg" alt="gambar mobil" />
+    <!-- alt=alternatif (misal gambar eror,mka akan digantikan alt) -->
+    <a href="https://codingstudio.id/topic/image-hyperlink/"
+      >Belajar HyperLink</a
+    >
+    <br />
+    <a href="./CS2.html">Ayo pindah ke CS2.html</a> <br />
+    <a href="https://codingstudio.id/topic/image-hyperlink/" target="_blank"
+      >Ini cara agar kita pindah ke tab baru saat klik link nya</a
+    >
+
+    <!-- HTML TABLE -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>No HP</th>
+          <!-- table header (judul tabel) -->
+        </tr>
+      </thead>
+      <!-- table head (judul tabel) -->
+      <!-- tidak ada perubahan saat menambahkan thead n tbody pada output html, ini hanya untuk kejelasan antar dev. penting untuk di ingat -->
+      <tbody>
+        <tr>
+          <td>Coding</td>
+          <td>iniemail@gmail.com</td>
+          <td>08977457241</td>
+          <!-- table data (isi tabel) -->
+          <!-- bisa juga menambahkan gambar, modelnya sama img src -->
+        </tr>
+        <!-- table row (baris tabel) -->
+      </tbody>
+      <!-- table body (isi tabel) -->
+    </table>
+
+    <!-- HTML INPUTS -->
+    <input type="text" placeholder="percobaan" /> <br />
+    <!-- banyak jenis input, cari di "mdn input type" -->
+    <!-- tipe 1 -->
+    <input type="email" placeholder="email" /> <br />
+    <input type="password" placeholder="password" /> <br />
+    <button>LogIn</button> <br />
+
+    <form action="https://www.youtube.com/">
+      <!-- action : alamat yg dituju. misal ingin kirim ke google, nanti google kirim url, masukkan url ke action -->
+      <!-- tipe 2 -->
+      <label for="EmailInput">Email</label>
+      <input type="Email" id="EmailInput" /> <br />
+      <label for="PassInput">Pass</label>
+      <input type="Pass" id="PassInput" /> <br />
+
+      <input type="radio" /> Male <br />
+      <input type="radio" /> Female <br />
+      <label for="Birthday">Birthday</label>
+      <input type="date" id="Birtday" /> <br />
+      <select>
+        <option value="">Pilihan 1</option>
+        <option value="">Pilihan 2</option>
+      </select>
+      <br />
+      <button>LogIn</button>
+    </form>
+    <!-- guna form : untuk mengirim data yg telah di isi di atas menuju backend. penting untuk diingat -->
+
+    <!-- EMBED HTML -->
+    <iframe src="https://codingstudio.id/member-area/" frameborder="0"></iframe>
+    <!-- paling sering di gunakan untuk menaruh vid yt/maps ke web -->
+    <!-- cara 1 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/DEKzi_7yyhE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <!-- cara masukkan vid yt : pilih vid, bagikan, embed/sematkan, copy. -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.333340136967!2d113.69967497470294!3d-8.1691327918618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6943a42369d8f%3A0x8bd003425ec58c76!2sAlun-Alun%20Jember!5e0!3m2!1sid!2sid!4v1685369107220!5m2!1sid!2sid"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <br />
+    <!-- cara masukkan maps : pilih maps, bagikan, embed/sematkan, copy. -->
+
+    <!-- cara 2 -->
+    <video controls width="250">
+      <source
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+      />
+      <!-- jika browser user tidak bisa operate .mp4, maka yg muncul adalah yg .webm -->
+      <source
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+        type="video/mp4"
+      />
+      <!-- jika browser user tidak bisa operate .webm, maka yg muncul adalah yg .mp4 -->
+      Sorry your browser can't support the video
+      <!-- jika keduanya tidak bisa, ini yg akan muncul -->
+    </video>
+    <br />
+
+    <!-- LATIHAN HTML -->
+    <a href="./LATIHAN CS.html">pergi ke Latihan CS.html</a>
+
+    <hr />
+    Author:Aka
+    <!-- hr(horizontal row)=garis -->
+  </body>
+</html>
+
+<!-- fyi : kita bisa pke command (<!-"-> yg ijo ini) langsung dari awal tanpa manual.
+contoh : <p></p> (select yang mau kita command + ctrl /) -->

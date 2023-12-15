@@ -1,0 +1,244 @@
+/* <--CSS SELECTOR--> */
+h2 /* <-- SELECTOR TAG */ {
+    /* sifatnya universal */
+    color /* <-- PROPERTY */: yellow /* <-- OUTPUT?! */;
+}
+
+.hijau /* <-- SELECTOR CLASS */ {
+    /* sifatnya kelompok */
+    color: green;
+}
+
+#ungu /* <-- SELECTOR ID */ {
+    /* sifatnya unik */
+    color: purple;
+}
+
+[placeholder="type something man"] /* <-- SELECTOR INPUT */ {
+    color: rgb(107, 230, 183);
+}
+
+/* <--STYLING TEXT--> */ 
+.color {
+    color: #77c1e0; /*<--hex*/
+    /* rgb(255,255,234) */
+    /* rgba(23,140,50,0.1) */
+    /* hsl(234,255,26) */
+    /* hsla(244,23,23,0.3) */
+}
+
+.alignment {
+    color: black;
+    text-align: center;
+}
+
+.decoration {
+    color: black;
+    text-decoration: underline;
+}
+ 
+.transformation {
+    color: black;
+    text-transform: uppercase;
+}
+
+.spacing {
+    text-indent: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    white-space: nowrap; /*bisa di scroll ke samping*/
+    line-height: 30px;
+}
+
+.shadow {
+    text-shadow: 20px 20px 10px red;
+}
+
+/* <--CSS BACKGROUND--> */
+.background-div {
+    background-color: red;
+}
+
+.background-span {
+    background-color: blue;
+}
+
+.background-img {
+    background-image: url('https://www.acrossthespiderverse.movie/images/synopsis_poster.jpg');
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*<--FONT-->*/
+.font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+/*<--DISPLAY-BLOCK-->*/
+#display /*div secara default sifatnya block*/{
+    background-color: red;
+}
+
+#hilang /*span secara defaut sifatnya inline*/{
+    background-color: green;
+}
+
+#ini-yg-hilang {
+    display: none;
+}
+
+#ini-gk-hilang /*sifat default span ini bisa dirubah ke block*/{
+    background-color: yellow;
+    display: block;
+}
+
+/* TRANSFORM & FILTER */
+.fox1 {
+    transform: translateX(20px) translateY(20px);
+}
+
+.fox2 {
+    transform: translate(30px,40px); /*X,Y*/
+}
+
+.fox3 {
+    transform: translate3d(30px,40px,50px); /*X,Y,Z. Z tidak terlalu berpengaruh*/
+}
+
+.fox4 {
+    transform: skewX(20deg); /*satuannya deggre*/ /*info lebih lanjut cek mdn transform*/
+}
+
+.fox5 {
+    transform: rotate(30deg); /*rotate polos=Z*/
+}
+
+.fox6 {
+    transform: rotateX(70deg);
+}
+
+.fox7 {
+    transform: rotateY(70deg); /*info lebih lanjut cek mdn transform*/
+}
+
+.fox8 {
+    transform: scaleX(2); /*untuk Y sma degn rotateY, lonjong kebawah*/
+}
+
+.fox9 {
+    transform: scale(0.5); /*ada perbedaan antara scale dan width, cek vidnya di menit 5:40 https://codingstudio.id/topic/transform-filter/*/
+}
+
+.fox10 {
+    filter: grayscale(100%)
+}
+
+.fox11 {
+    filter: brightness(40%);
+}
+
+.fox12 {
+    filter: blur(5px);
+}
+
+.fox13 {
+    filter: blur(5px); /*penggunaan blur biasanya seperti ini*/
+}
+
+.fox13:hover {
+    filter: blur(0px); /*ini juga include*/
+}
+
+/* ANIMASI CSS */
+.cat1 {
+    transition-duration: 1s ;
+}
+
+.cat1:hover {
+    filter: brightness(0%);
+}
+
+.cat2 {
+    transition-duration: 1s ;
+    transition-delay: 1s;
+}
+
+.cat2:hover {
+    filter: brightness(0%);
+}
+
+.cat3 {
+    transition-duration: 1s ;
+    transition-delay: 1s;
+}
+
+.cat3:hover {
+    filter: brightness(0%);
+    transform: translateX(30px);
+}
+
+.cat4 {
+    transition-duration: 1s ;
+    transition-property: filter;
+}
+
+.cat4:hover {
+    filter: brightness(0%);
+    transform: translateX(30px);
+}
+
+.cat5 {
+    transition-duration: 1s ;
+    transition-property: transform filter;
+}
+
+.cat5:hover {
+    filter: brightness(0%);
+    transform: translateX(30px);
+    filter: blur(10px);
+}
+
+.cat6 {
+    transition-duration: 1s ;
+    transition-timing-function: ease-in-out; /*bikin transition nya lebih smooth aja*/
+}
+
+.cat6:hover {
+    filter: brightness(0%);
+    transform: translateX(30px);
+}
+
+@keyframes bergerak { /* cara 1 */
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(50px,50px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.cat7 {
+    animation: bergerak 2s 1; /*2s timing nya, 1 brp kali jumlah animasinya di ulang, kalau terus"an kasih infinite*/
+}
+
+@keyframes animasi { /* cara 2 */
+    from {
+        transform: scale(2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.cat8 {
+    animation: animasi 2s infinite;
+}

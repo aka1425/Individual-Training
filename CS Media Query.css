@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+  }
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    font-weight: bold;
+    
+}
+
+.header-left {
+    float: left;
+    padding-top: 23px ;
+}
+
+.header-left a {
+    color: black;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    color: black;
+    padding: 0 30px;
+    text-align: center;
+    display: block;
+    float: right;
+    transition: all 0.5s;
+    line-height: 65px;
+}
+
+.Log-In {
+    background-color: green;
+    color: white;
+}
+
+.header-right a:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}

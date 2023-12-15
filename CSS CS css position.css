@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.h-700 {
+    height: 700px;
+}
+
+.bg-salmon {
+    background-color: salmon;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.position {
+    background: gray;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+     right: 20px;
+}
+
+.position2 {
+    background: white;
+    padding: 20px;
+    position: sticky;
+    top: 10px;
+     right: 20px;
+}
+
+.box { /*ada lanjutan nya ini, tpi for now gini dulu. malass*/
+    position: relative;
+    width: 300px;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+    background-color: teal;
+}

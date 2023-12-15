@@ -1,0 +1,16 @@
+/*PSEUDO selector*/
+h3:hover {
+    color: blue;
+}
+
+span:hover {
+    color: red;
+}
+
+input:focus {
+    background-color: purple;
+}
+
+a:visited {
+    color: yellow;
+}
